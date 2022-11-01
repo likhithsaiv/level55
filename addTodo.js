@@ -5,7 +5,7 @@ const db = require("./models/index");
 const createTodo = async (params) => {
   try {
     await db.Todo.addTask(params);
-  } catch (error) {
+  } catch (error)  {
     console.error(error);
   }
 };
